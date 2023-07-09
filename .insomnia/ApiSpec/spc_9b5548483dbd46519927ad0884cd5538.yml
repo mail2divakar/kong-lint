@@ -1,11 +1,11 @@
 _id: spc_9b5548483dbd46519927ad0884cd5538
 type: ApiSpec
 parentId: wrk_288ad0e906f442c9a32ba3ab93f7a47c
-modified: 1688740006638
+modified: 1688928125533
 created: 1688654003301
 fileName: my-spec.yaml
 contents: >-
-  openapi: "3.0.0"
+  openapi: "3.0.2"
 
   info:
     version: 1.0.0
@@ -14,18 +14,35 @@ contents: >-
     termsOfService: http://swagger.io/terms/
     contact:
       name: Swagger API Team
-      email: apiteam@swagger.io
+      email: divakar.kadupu@valuemomentum.com
       url: http://swagger.io
     license:
       name: Apache 2.0
       url: https://www.apache.org/licenses/LICENSE-2.0.html
   servers:
     - url: http://petstore.swagger.io/api
+  tags:
+    - name: Hello-world
+      description: All about Hello
+      externalDocs:
+        url: http://docs.my-api.com/hello-world.htm
+    - name: Hello-world2
+      description: All about Hello
+      externalDocs:
+        url: http://docs.my-api.com/hello-world.htm
+    - name: Hello-world3
+      description: All about Hello
+      externalDocs:
+        url: http://docs.my-api.com/hello-world.htm
+    - name: Hello-world4
+      description: All about Hello
+      externalDocs:
+        url: http://docs.my-api.com/hello-world.htm      
   paths:
-    /pets:
+    /pets-Test-Path:
       get:
         tags:
-          - "Hello-World"
+          - Hello-world
         description: |
           Returns all pets from the system that the user has access to
           Nam sed condimentum est. Maecenas tempor sagittis sapien, nec rhoncus sem sagittis sit amet. Aenean at gravida augue, ac iaculis sem. Curabitur odio lorem, ornare eget elementum nec, cursus id lectus. Duis mi turpis, pulvinar ac eros ac, tincidunt varius justo. In hac habitasse platea dictumst. Integer at adipiscing ante, a sagittis ligula. Aenean pharetra tempor ante molestie imperdiet. Vivamus id aliquam diam. Cras quis velit non tortor eleifend sagittis. Praesent at enim pharetra urna volutpat venenatis eget eget mauris. In eleifend fermentum facilisis. Praesent enim enim, gravida ac sodales sed, placerat id erat. Suspendisse lacus dolor, consectetur non augue vel, vehicula interdum libero. Morbi euismod sagittis libero sed lacinia.
@@ -65,7 +82,8 @@ contents: >-
                 schema:
                   $ref: '#/components/schemas/Error'
       post:
-        tags: []
+        tags:
+          - Hello-world2
         description: Creates a new pet in the store.  Duplicates are allowed
         operationId: addPet
         requestBody:
@@ -90,7 +108,8 @@ contents: >-
                   $ref: '#/components/schemas/Error'
     /pets/{id}:
       get:
-        tags: []
+        tags:
+          - Hello-world3
         description: Returns a user based on a single ID, if the user does not have access to the pet
         operationId: getPetById
         parameters:
@@ -115,7 +134,8 @@ contents: >-
                 schema:
                   $ref: '#/components/schemas/Error'
       delete:
-        tags: []
+        tags:
+          - Hello-world4
         description: deletes a single pet based on the ID supplied
         operationId: deletePet
         parameters:
@@ -151,7 +171,7 @@ contents: >-
       NewPet:
         type: object
         required:
-          - name  
+          - name 
         properties:
           name:
             type: string
@@ -169,7 +189,4 @@ contents: >-
             format: int32
           message:
             type: string
-  tags:
-
-  - name: test
 contentType: yaml
