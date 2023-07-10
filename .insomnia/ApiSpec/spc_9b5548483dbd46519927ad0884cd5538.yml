@@ -1,7 +1,7 @@
 _id: spc_9b5548483dbd46519927ad0884cd5538
 type: ApiSpec
 parentId: wrk_288ad0e906f442c9a32ba3ab93f7a47c
-modified: 1688928125533
+modified: 1688960416753
 created: 1688654003301
 fileName: my-spec.yaml
 contents: >-
@@ -20,7 +20,7 @@ contents: >-
       name: Apache 2.0
       url: https://www.apache.org/licenses/LICENSE-2.0.html
   servers:
-    - url: http://petstore.swagger.io/api
+    - url: testy.mctest-face.com
   tags:
     - name: Hello-world
       description: All about Hello

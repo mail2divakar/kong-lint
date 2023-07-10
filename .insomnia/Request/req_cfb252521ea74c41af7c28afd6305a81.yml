@@ -1,0 +1,21 @@
+_id: req_cfb252521ea74c41af7c28afd6305a81
+type: Request
+parentId: fld_341d3d6ca10a409db3a5a98c8506329c
+modified: 1688960386670
+created: 1688960386670
+url: "{{ _.base_url }}/pets/{{ _.id }}"
+name: /pets/{id}
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1688960386670
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

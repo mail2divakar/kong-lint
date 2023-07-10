@@ -1,0 +1,27 @@
+_id: req_8b18877884094d75b7f6bb4115a11168
+type: Request
+parentId: fld_dfd43c9e93264d2298cf223867117d4a
+modified: 1688960386606
+created: 1688960386606
+url: "{{ _.base_url }}/pets-Test-Path"
+name: /pets-Test-Path
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: tags
+    disabled: true
+    value: string
+  - name: limit
+    disabled: true
+    value: "0"
+headers: []
+authentication: {}
+metaSortKey: -1688960386606
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

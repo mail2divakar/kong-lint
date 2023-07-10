@@ -1,0 +1,30 @@
+_id: req_61ff0676f4b444eda1e4bd9f94c0907a
+type: Request
+parentId: fld_953f93ee21444e29b3552a136c3a8c4a
+modified: 1688960386612
+created: 1688960386612
+url: "{{ _.base_url }}/pets-Test-Path"
+name: /pets-Test-Path
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "string",
+      "tag": "string"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json
+authentication: {}
+metaSortKey: -1688960386612
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

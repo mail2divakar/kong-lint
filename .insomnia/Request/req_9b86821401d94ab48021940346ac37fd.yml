@@ -1,0 +1,21 @@
+_id: req_9b86821401d94ab48021940346ac37fd
+type: Request
+parentId: fld_0f3eff492af34e1a96c51eb5fea9e898
+modified: 1688960386636
+created: 1688960386636
+url: "{{ _.base_url }}/pets/{{ _.id }}"
+name: /pets/{id}
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1688960386636
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
